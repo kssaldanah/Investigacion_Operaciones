@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/icon/icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/icon/icon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/icon/icon.png">
+  <link rel="manifest" href="icon/site.webmanifest">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="public/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+  <title>Simplex 2 fases </title>
+</head>
+
+<body>
+  <header class="relative isolate pt-10 px-6 sm:pt-24">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+        <defs>
+          <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+            <path d="M100 200V.5M.5 .5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+          <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+        </svg>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+      </svg>
+    </div>
+    <div class="mx-auto max-w-7xl lg:px-0">
+        <div class="mx-auto max-w-2xl lg-mx-0 text-left font-sans">
+            <p class="font-semibold text-xl sm:text-2xl text-gray-500">Programacion lineal</>
+            <h1 class="font-bold text-7xl sm:text-7xl tracking-tight text-red-500">Simplex <span class="text-amber-400">U</span>D</h1>
+            <p class="mt-2 text-xl leading-8 text-gray-500">Soluciona tus problemas de programacion lineal sease mediante el metodo simplex, dos fases o grafico.</p>
+            <button onclick="location.href='#programa'" class="mt-4 mb-1 py-2 px-3 outline outline-red-600 rounded-md bg-red-500 hover:bg-red-600 text-white font-semibold">Ir al programa</button>
+        </div>
+    </div>
+  </header>
+  <section>
+    <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div class="absolute inset-0 -z-10 overflow-hidden">
+        <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+          <defs>
+            <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+              <path d="M100 200V.5M.5 .5H200" fill="none" />
+            </pattern>
+          </defs>
+          <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+            <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+          </svg>
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+        </svg>
+      </div>
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+        <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          <div class="lg:pr-4">
+            <div class="lg:max-w-lg">
+              <p class="text-base font-semibold leading-7 text-red-500">Programacion lineal</p>
+              <h2 class="mt-2 text-3xl font-bold tracking-tight text-red-600 sm:text-4xl">¿En que nos basamos?</h2>
+              <p class="mt-6 text-base leading-8 text-gray-500">La optimización lineal es una técnica matemática utilizada para encontrar la mejor solución a un problema que tiene restricciones y un objetivo definido. Este tipo de problemas surge en diversas áreas como la economía, la ingeniería, la logística y muchas más. Los dos métodos más comunes para resolver estos problemas son el <span class="font-semibold text-red-500">Método Gráfico</span> y el <span class="font-semibold text-red-500">Método Simplex.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="public/images/simplexUD.png" alt="">
+        </div>
+        <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          <div class="lg:pr-4">
+            <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+              <p class="text-base font-bold leading-7 text-red-500">Metodo Grafico</p>
+              <p class="text-base leading-8 text-gray-500">El Método Gráfico es una técnica visual para resolver problemas de programación lineal con dos variables. Es especialmente útil para comprender los conceptos básicos de la optimización lineal de una manera intuitiva y clara.</p>
+              <ol role="list" class="list-decimal mt-2 ml-6 space-y-2 text-gray-600">
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">1. Formulación del Problema:</strong> Escribe el problema en términos de funciones lineales. Identifica la función objetivo (lo que quieres maximizar o minimizar) y las restricciones (las limitaciones del problema).</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">2. Dibuja el Plano Cartesiano:</strong> Representa cada restricción como una línea en el plano cartesiano. Cada línea divide el plano en dos regiones: una que satisface la restricción y otra que no.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">3. Encuentra la Región Factible:</strong> La región factible es la intersección de todas las áreas que satisfacen las restricciones. Esta región puede ser un polígono, una línea o un punto.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">4. Identifica los Vértices:</strong> Los puntos donde las líneas de las restricciones se intersectan son los vértices de la región factible.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">5. Evalúa la Función Objetivo en los Vértices:</strong> Calcula el valor de la función objetivo en cada vértice de la región factible.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">6. Selecciona la Mejor Solución:</strong> Elige el vértice que maximiza o minimiza la función objetivo, dependiendo del problema.</span>
+                </li>
+              </ol>
+              <p class="mt-8 text-base leading-8 text-gray-500"">El Método Simplex es eficiente y puede manejar problemas con cientos o incluso miles de variables y restricciones. Es una herramienta esencial para la optimización en la industria, la economía y muchas otras áreas.</p>
+            </div>
+            <div class="mt-6 max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+              <p class="text-base font-bold leading-7 text-red-500">Metodo Simplex</p>
+              <p class="text-base leading-8 text-gray-500">El Método Simplex es un algoritmo poderoso y versátil que puede resolver problemas de optimización lineal con muchas variables y restricciones. Fue desarrollado por George Dantzig en 1947 y sigue siendo una herramienta fundamental en la investigación operativa y la optimización.</p>
+              <ol role="list" class="list-decimal mt-2 ml-6 space-y-2 text-gray-600">
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">1. Formulación del Problema:</strong> Escribe el problema en forma estándar. La forma estándar requiere que la función objetivo se maximice y que todas las restricciones sean ecuaciones de igualdad con variables no negativas.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">2. Tabla Simplex Inicial:</strong> Crea una tabla Simplex inicial que incluye la función objetivo y las restricciones. Esta tabla organizará los cálculos necesarios para el algoritmo.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">3. Identificar la Variable Entrante:</strong> Busca la variable que puede mejorar la solución actual más rápidamente. Esta es la variable con el coeficiente más negativo en la fila de la función objetivo.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">4. Identificar la Variable Saliente:</strong> Determina cuál variable básica debe dejar la base. Esto se hace dividiendo los valores de la columna de la solución actual por los coeficientes de la variable entrante y seleccionando el valor más pequeño positivo.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">5. Actualizar la Tabla Simplex:</strong> Realiza operaciones fila para convertir la variable entrante en una variable básica y actualizar el resto de la tabla.</span>
+                </li>
+                <li class="flex gap-x-3 text-base leading-8 text-gray-500">
+                  <span><strong class="font-semibold text-red-500">6. Repetir:</strong> Repite los pasos 3 a 5 hasta que no haya más coeficientes negativos en la fila de la función objetivo, lo que significa que se ha alcanzado la solución óptima.</span>
+                </li>
+              </ol>
+              <p class="mt-8 text-base leading-8 text-gray-500"">El Método Gráfico es fácil de entender y aplicar, pero solo es práctico para problemas con dos variables. Para problemas más complejos, necesitamos el Método Simplex.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <section id="programa" class="font-sans">
+    <div class="container">
+      <div class="block columns">
+        <div class="column is-three-fifths-desktop">
+          <div class=" flex items-center justify-center mb-4">
+            <div class="w-full max-w-xs">
+              <label class="text-xl font-bold text-red-500">Selecciona un método</label>
+              <select id="method-select" name="method-select" class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <option value="grafico" selected>Método Gráfico</option>
+                  <option value="simplex">Método Simplex</option>
+              </select>
+            </div>
+          </div>
+          <div class="block">
+            <textarea id="problem" class="textarea is-focused is-info" rows="10"></textarea>
+          </div>
+          <div class="level is-mobile">
+            <div class="level-item">
+              <button id="solve" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Calcular</button>
+            </div>
+            <div class="level-item">
+              <button id="reset" class="bg-gray-100 hover:bg-gray-200 text-red-500 font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline" disabled>Reiniciar</button>
+            </div>
+            <div class="level-item">
+              <button id="history" class="bg-gray-100 hover:bg-gray-200 text-red-500 font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline" data-target="history-modal">Historial</button>
+            </div>
+          </div>
+          <div class="block" id="empty-msg"></div>
+        </div>
+        <div class="card column " classs="has-text-justified">          
+          <div class="text-left m-4">
+              <h2 class="font-bold text-xl text-red-500">¿Como usarlo? ¡Facil!</h2>
+              <p>Debes cumplir una sintaxis estandar para que podamos resolver tu problema...<br> ¡sin problemas!<br><br>
+                  <span class="text-red-500 font-bold">Paso 1</span><br>
+                  Para empezar, empieza por definir la <span class="text-red-400 font-semibold">funcion objetivo</span> (Min/Max)<br><br>
+                  Por ejemplo : <span class=" font-semibold">max: 3x1 + 2x2</span><br><br>
+                  <span class="text-red-500 font-bold">Paso 2</span><br>
+                  Acontinuacion, escribe las <span class="text-red-400 font-semibold">restricciones</span> a las que se sujeta el problema, ¡diferencialas con un salto de linea!<br><br>
+                  Por ejemplo :
+              </p>
+              <ul class="list-none list-inside ml-4 font-semibold">
+                  <li>2x1 + x2 <= 18</li>
+                  <li>2x1 + 3x3 <= 42</li>
+                  <li>3x1 + x2 >= 24</li>
+              </ul>
+              <br>
+              <p>De igual manera no te preocupes, nosotros hemos puesto este ejemplo para ti en el cuadro de texto.<br><br>
+                  <input type="checkbox" name="lista" id="lista" class="mr-1">
+                  ¿Mas dudas de como usarlo?, aqui una lista de mas especificaciones de la sintaxis.
+              </p>
+          </div>
+          <div id="informacionAdicional" class="hidden text-left mx-4">
+              <ul class="list-disc list-inside m-4">
+                  <li>El coeficiente debe ser un número real.</li>
+                  <li>Las variables deben ser identificadas con x1, x2, x3, etc.</li>
+                  <li>Los operadores permitidos son <=, >= y =.</li>
+              </ul>
+          </div>    
+        </div>  
+      </div>
+    </div>
+  <section/>
+  <section class="font-sans"> <!-- ----------------------GRAFICO------------------------->
+    <div id="r_grafico" class="my-4 sm:my-10">
+        <div id="plot" class="flex 1 m sm:mx-20"></div>
+    </div>
+    <div id="result" class="flex 1 justify-center m-4 sm:mx-20"></div>
+    <div id="optima" class="flex 1 justify-center m-4 sm:mx-20"></div>
+    <div class="section">
+      <div class="container">
+        <div id="output"></div>
+      </div>
+    </div>
+  </section>
+  <section> <!-- ----------------------EQUIPO------------------------->
+    <div class="mx-4 sm:mx-32 mb-4">
+      <h2 class="font-bold text-4xl text-red-500">Equipo de desarrollo</h2>
+      <p class="text-lg font-sm text-[#4B5563] mt-4 mb-6">Integrantes del equipo encargado de desarrollar este proyecto para investigacion de operaciones como proyecto final</p>
+    </div>
+    <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-6 sm:mx-40">
+      <div>
+        <div>
+          <img class="w-64 rounded-2xl text-center" src="public/images/sgb.png" alt="Foto de programador Andres" />
+        </div>
+        <p class="mt-4 text-[1.17rem] font-semibold text-[#111827]">Santiago Gutierrez</p>
+        <p class="text-[#4B5563]">Programador Junior</p>
+        <div class="mt-4 mb-5 flex grid-flex space-x-2 items-center">
+          <a href=""><img class="w-5" src="public/icon/linkedin.png" alt="icono de linkedin con enlace al linkedin de andres"></a>
+          <a href=""><img src="public/icon/camara.png" alt="Icono de instagram con enlace al insta de andres"></a>
+        </div>
+      </div>
+      <div>
+        <img class="w-64 rounded-2xl text-center" src="public/images/adfg.png" alt="Foto de programador Andres" />
+        <p class="mt-4 text-[1.17rem] font-semibold text-[#111827]">Andres Gongora</p>
+        <p class="text-[#4B5563]">Programador Junior</p>
+        <div class="mt-4 mb-5 flex grid-flex space-x-2 items-center">
+          <a href="https://www.linkedin.com/in/drezzgo/"><img class="w-5" src="public/icon/linkedin.png" alt="icono de linkedin con enlace al linkedin de andres"></a>
+          <a href="https://www.instagram.com/drezzgo"><img src="public/icon/camara.png" alt="Icono de instagram con enlace al insta de andres"></a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img class="w-64 rounded-2xl" src="public/images/kssh.png" alt="Foto de programador Andres" />
+        </div>
+        <p class="mt-4 text-[1.17rem] font-semibold text-[#111827]">Santiago Saldaña</p>
+        <p class="text-[#4B5563]">Programador Junior</p>
+        <div class="mt-4 mb-5 flex grid-flex space-x-2 items-center">
+          <a href="https://www.linkedin.com/in/santi_kevin0323/"><img class="w-5 saturate-" src="public/icon/linkedin.png" alt="icono de linkedin con enlace al linkedin de andres"></a>
+          <a href="https://www.instagram.com/santi_kevin0323/"><img src="public/icon/camara.png" alt="Icono de instagram con enlace al insta de andres"></a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img class="w-64 rounded-2xl" src="public/images/jdv.png" alt="Foto de programador Andres" />
+        </div>
+        <p class="mt-4 text-[1.17rem] font-semibold text-[#111827]">Jonathan Duarte</p>
+        <p class="text-[#4B5563]">Programador Junior</p>
+        <div class="mt-4 mb-5 flex grid-flex space-x-2 items-center">
+          <a href=""><img class="w-5" src="public/icon/linkedin.png" alt="icono de linkedin con enlace al linkedin de andres"></a>
+          <a href=""><img src="public/icon/camara.png" alt="Icono de instagram con enlace al insta de andres"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section> <!-- ----------------------SIMPLEX------------------------->
+    <div class="modal is-size-6" id="history-modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Input history</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <p>No history, start using to save history.</p>
+        </section>
+        <section class="modal-card-foot">
+          <button class="button">Cancelar</button>
+        </section>
+      </div>
+    </div>
+</section>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="public/js/calculo.js"></script>
+  <script src="public/js/grafico.js"></script>
+  <script src="public/js/dom.js"></script>
+</body>
+<footer class="font-sans text-gray-900 w-full border-primary border-t-2 flex flex-col md:flex-row justify-center items-center md:justify-between pt-2 pb-2 gap-y-10">
+  <span class="text-sm leading-6 text-gray-600 text-center mx-20">
+  2024 Universidad Distrital Franisco Jose de Caldas <span aria-hidden class="hidden md:inline">|</span
+  ><br aria-hidden class="block md:hidden" /> Todos los derechos reservados. <br> Docente : Edwing Oswaldo Berdugo Romero / eoberdigor@udistrital.edu.co || Estudiantes : Andres Gongora / afgongorar@udistrital.edu.co <br> Santiago Saldaña : kssaldanah@udistrital.edu.co || Santiago Gutierrez : avacostar@udistrital.edu.co || Jonathan Duarte : jyduarteb@udistrital.edu.co
+  </span>
+
+  <ul class="flex flex-row gap-x-6 items-center mx-20">
+      <li>
+          <a 
+          target="_blank"
+          rel="noopener"
+          href="https://www.udistrital.edu.co/inicio"
+          class="hover:scale-110 hover:opacity-70 transition inline-block scalw-"
+          >
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Escudo_UD.svg/2118px-Escudo_UD.svg.png" alt="Logo de La universidad distrital"  class="w-24 h-auto">
+          </a>
+      </li>
+      <li>
+          <a
+          target="_blank"
+          rel="noopener"
+          href="http://tecsistematizaciondatos.udistrital.edu.co:8080/inicio"
+          class="hover:scale-110 hover:opacity-70 transition inline-block"
+          >
+              <img src="https://yt3.googleusercontent.com/j_6mzF_h2FDaLoN0UDsR21aMagOCFEiW7DNGkJa1ja7NerFdcOk2Mz1EtvLmNmTawC4ar3DG=s900-c-k-c0x00ffffff-no-rj" alt="Logo de Tecnologia en Saneamiento Ambiental" class="w-24 h-auto">
+          </a>
+      </li>
+      <li></li>
+  </ul>
+</footer>
+</html>

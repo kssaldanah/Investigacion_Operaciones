@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Lineal Gráfica</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Resolución de Programación Lineal</h1>
+    <form id="inputForm">
+        <label for="FunObj">Función Objetivo (ej. 3x + 4y):</label>
+        <input type="text" id="FunObj" name="FunObj"><br><br>
+        <label for="Restricciones">Restricciones (una por línea, ej. 2x + 3y <= 12):</label><br>
+        <textarea id="Restricciones" name="Restricciones" rows="5" cols="30"></textarea><br><br>
+        <button type="button" onclick="ObtenerProblema()">Resolver</button>
+    </form>
+    <div id="plot" style="width:600px;height:400px;"></div>
+    <div id="result"></div> <!-- Aquí se mostrará la tabla -->
+    <div id="solucion-optima"></div>
+    <script src="./graficoMainJett.js"></script>
+</body>
+</html>
+  
